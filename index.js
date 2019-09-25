@@ -50,6 +50,15 @@ const slugs = dataObj.map(el => slugify(el.productName, { lower: true }));
 console.log(slugs);
 console.log(slugify('Fresh Avacado', { lower: true }));
 
+//Syntax of an iife Function Immediately Invoked Function Expression
+(async () => {
+    try {
+
+    } catch (err) {
+
+    }
+})();
+
 const server = http.createServer((req, res) => {
     const { query, pathname } = url.parse(req.url, true);
     //OverView Page
